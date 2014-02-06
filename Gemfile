@@ -59,6 +59,9 @@ gem 'faker', '~> 1.2.0'
 # gem 'carrierwave'
 # gem 'mini_magick'
 
+# Configuration
+gem 'figaro'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
