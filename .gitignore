@@ -32,3 +32,6 @@ public/uploads
 # Sublime Project Files
 *.sublime-project
 *.sublime-workspace
+
+# Ignore application configuration
+/config/application.yml

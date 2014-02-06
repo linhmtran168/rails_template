@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 1.2'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
+# Authentication
+gem 'devise'
+
 # Web assets
 gem 'bootstrap-sass', '~> 3.1.0.1'
 gem 'font-awesome-sass'
