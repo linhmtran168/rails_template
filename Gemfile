@@ -36,6 +36,9 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Authentication
 gem 'devise'
 
+# Postgresql extension
+gem 'postgres_ext'
+
 # Web assets
 gem 'bootstrap-sass', '~> 3.1.0.1'
 gem 'font-awesome-sass'

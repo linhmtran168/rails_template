@@ -153,7 +153,12 @@ GEM
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
     pg (0.17.1)
+    pg_array_parser (0.0.9)
     polyglot (0.3.3)
+    postgres_ext (2.2.0)
+      activerecord (~> 4.0.0)
+      arel (~> 4.0.1)
+      pg_array_parser (~> 0.0.9)
     powerpack (0.0.9)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -312,6 +317,7 @@ DEPENDENCIES
   kgio
   newrelic_rpm
   pg
+  postgres_ext
   pry-debugger
   pry-rails
   pry-stack_explorer
