@@ -1,0 +1,22 @@
+{
+  "name": "Rails Template",
+  "version": "0.0.1",
+  "homepage": "https://github.com/linhmtran168/rails_template",
+  "authors": [
+    "Linh Tran <linh.mtran168@live.com>"
+  ],
+  "description": "A Basic Template for Rails App",
+  "keywords": [
+    "rails",
+    "template"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
