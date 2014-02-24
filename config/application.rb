@@ -27,5 +27,8 @@ module Sunnie
 
     # Add assets to compile
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    # Include Bower components in compiled assets
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
   end
 end
