@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
 # Define ruby version
-ruby '2.1.0'
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.3'
 
 # Use sqlite3 as the database for Active Record
 gem 'pg'
@@ -35,6 +35,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Authentication
 gem 'devise'
+# gem 'pundit'
 
 # Postgresql extension
 gem 'postgres_ext'
@@ -42,11 +43,6 @@ gem 'postgres_ext'
 # Web assets
 gem 'bootstrap-sass', '~> 3.1.0.1'
 gem 'font-awesome-sass'
-
-# Additionala js library
-# gem 'nprogress-rails'
-# gem 'dropzonejs-rails'
-# gem 'parsley-rails'
 
 # Pagination
 gem 'will_paginate', '~> 3.0.5'
@@ -63,6 +59,7 @@ gem 'faker', '~> 1.2.0'
 
 # Upload image
 # gem 'carrierwave'
+# gem 'paperclip'
 # gem 'mini_magick'
 
 # Configuration
@@ -97,7 +94,8 @@ group :development, :test do
   gem 'hirb'
   gem 'sketches'
   gem 'debugger'
-  gem 'pry-debugger'
+  gem 'pry-byebug'
+  gem 'pry-coolline'
   gem 'pry-stack_explorer'
 end
 
