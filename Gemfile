@@ -41,7 +41,7 @@ gem 'devise'
 gem 'postgres_ext'
 
 # Web assets
-gem 'bootstrap-sass', '~> 3.1.0.1'
+gem 'bootstrap-sass', '~> 3.1.1'
 gem 'font-awesome-sass'
 
 # Pagination
@@ -93,7 +93,6 @@ group :development, :test do
   gem 'awesome_print'
   gem 'hirb'
   gem 'sketches'
-  gem 'debugger'
   gem 'pry-byebug'
   gem 'pry-coolline'
   gem 'pry-stack_explorer'
@@ -103,7 +102,7 @@ group :development do
   gem 'bullet'
   gem 'capistrano'
   gem 'capistrano-rails', '~> 1.1'
-  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano-chruby', '~> 0.1.1'
   gem 'better_errors'
   gem 'binding_of_caller'
 
