@@ -88,6 +88,9 @@ group :development, :test do
   gem 'childprocess', '~> 0.3.9'
   gem 'factory_girl_rails', '~> 4.3.0'
 
+  # For RailsPanel
+  gem 'meta_request'
+
   # For pry
   gem 'pry-rails'
   gem 'awesome_print'
