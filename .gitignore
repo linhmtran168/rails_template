@@ -17,6 +17,7 @@
 
 # Other unneed files
 database.yml
+newrelic.yml
 doc/
 *.swp
 *~
@@ -24,8 +25,10 @@ doc/
 .DS_STORE
 .idea
 .secret
+dump.rdb
 
 # Upload image folder
+public/images
 public/uploads
 
 

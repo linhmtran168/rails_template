@@ -1,11 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
-# Pick the frameworks you want:
-require "active_record/railtie"
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "sprockets/railtie"
-# require "rails/test_unit/railtie"
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -23,12 +18,22 @@ module Sunnie
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :en
 
     # Add assets to compile
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
     # Include Bower components in compiled assets
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
+    # rails-i18n
+    config.i18n.available_locales = [:en]
+
+    # Config mailer preview path
+    config.action_mailer.preview_path = "#{Rails.root}/lib/mailer_previews"
+
+    # I18n-js
+    config.assets.initialize_on_precompile = true
+    config.middleware.use I18n::JS::Middleware
   end
 end

@@ -1,15 +1,11 @@
 AllCops:
-  Includes:
+  Include:
     - tasks/*.rake
-  Excludes:
-    - tmp/*
-    - vendor/*
-    - spec/*
-    - bin/*
+  Exclude:
+    - tmp/**/*
+    - vendor/**/*
+    - bin/**/*
     - db/schema.rb
-    - db/migrate/*
-    - lib/file_size_validator.rb
-    - config/*
 
 LineLength:
   Max: 100
@@ -19,3 +15,6 @@ MethodLength:
 
 CyclomaticComplexity:
   Max: 8
+
+Documentation:
+  Enabled: false
