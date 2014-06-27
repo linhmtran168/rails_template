@@ -133,6 +133,9 @@ group :development do
 
   # For preview email in the browser
   gem 'letter_opener'
+
+  # For livereload
+  gem 'guard-livereload', require: false
 end
 
 group :test do
