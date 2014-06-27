@@ -86,8 +86,8 @@ gem 'faker', '~> 1.2.0'
 gem 'paperclip'
 
 # Profiling
-gem 'rack-mini-profiler', require: false
-gem 'flamegraph'
+# gem 'rack-mini-profiler', require: false
+# gem 'flamegraph'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
