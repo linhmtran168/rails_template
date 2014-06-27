@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.2'
 
 # Background processing
 gem 'sidekiq'
@@ -21,9 +21,15 @@ gem 'dalli'
 gem 'kgio'
 
 # Redis
-# gem 'hiredis'
-# gem 'redis'
-# gem 'redis-rails'
+gem 'hiredis'
+gem 'redis'
+gem 'redis-rails'
+
+# Performance
+gem 'escape_utils'
+gem 'fast_blank'
+gem 'oj'
+gem 'oj_mimic_json'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -78,6 +84,10 @@ gem 'faker', '~> 1.2.0'
 
 # Upload image
 gem 'paperclip'
+
+# Profiling
+gem 'rack-mini-profiler', require: false
+gem 'flamegraph'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
