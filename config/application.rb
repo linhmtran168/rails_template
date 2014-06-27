@@ -1,6 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+# For elastic search logging
+require 'elasticsearch/rails/instrumentation'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -31,9 +33,5 @@ module Sunnie
 
     # Config mailer preview path
     config.action_mailer.preview_path = "#{Rails.root}/lib/mailer_previews"
-
-    # I18n-js
-    config.assets.initialize_on_precompile = true
-    config.middleware.use I18n::JS::Middleware
   end
 end
